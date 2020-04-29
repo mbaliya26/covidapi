@@ -14,3 +14,4 @@
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
+$router->post('location', 'LocationController@postLocation');
